@@ -16,7 +16,7 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 // import heroImage from '../images/header-background.webp';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-// import heroImage from "../images/react-resume-template-2.0.0.jpeg";
+import heroImage from "../images/react-resume-template-2.0.0.jpeg";
 // import heroImage from "../images/Untitled.jpeg";
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
