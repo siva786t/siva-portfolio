@@ -13,7 +13,11 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+// import heroImage from '../images/header-background.webp';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+// import heroImage from "../images/react-resume-template-2.0.0.jpeg";
+// import heroImage from "../images/Untitled.jpeg";
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -24,7 +28,9 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage10 from '../images/portfolio/Siva_Image.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+// import profilepic from '../images/portfolio/Siva_Image.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -39,6 +45,7 @@ import {
   TestimonialSection,
   TimelineItem,
 } from './dataDef';
+import React from "react";
 
 /**
  * Page meta data
@@ -69,20 +76,19 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Sivasubramani T`,
   description: (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
-    </>
+      <>
+        <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+          As a <strong className="text-stone-100">Software Engineer at Zoho Corporation</strong>, I worked on the development of the Zoho Meeting product, a Video Conferencing Application.
+          <strong className="text-stone-100"> I am the one managing and responsible for implementing new features in computer & phone audio and screen sharing components </strong> and also maintaining the existing codebase using technologies such as C/C++ and Java.
+        </p>
+        {/*<p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">*/}
+        {/*  In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,*/}
+        {/*  plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}*/}
+        {/*  <strong className="text-stone-100">Vancouver Island</strong>.*/}
+        {/*</p>*/}
+      </>
   ),
   actions: [
     {
@@ -104,16 +110,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Passionate and experienced C/C++ software developer with a strong background in system-level programming and algorithm design. 
+  Proficient in optimizing code for performance and scalability, and skilled at debugging and troubleshooting complex issues. Have 5+ years of professional experience in C/C++ development.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Location', text: 'Chennai (Tamilnadu), India', Icon: MapIcon},
+    {label: 'Age', text: '28', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Interests', text: 'Cricket,Movies,Sports', Icon: SparklesIcon},
+    {label: 'Study', text: 'SSN College of Engineering - Chennai', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Zoho Corporation.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -263,21 +268,34 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
+// @ts-ignore
+// @ts-ignore
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2012 - 2016',
+    location: 'SSN college of Engineering (Chennai)',
+    title: 'B.Tech, Chemical Engineering',
+    // content: <p>CGPA: 8.0 / 10.0
+    //   <p> Coursework:</p>
+    //   <p>  Project management, Process design, Fluid Mechanics, Chemical Process Industries,
+    //     Organic Chemistry, Heat Transfer Operations, Mass Transfer Operations, Chemical Engineering Thermodynamics.
+    //   </p>,
+    // <p> Project : Conversion of Waste Cooking Oil to Biodiesel </p>
+    // <p> - Conducted research on the feasibility of converting waste cooking oil into biodiesel  </p>
+    // <p> - Designed and built a pilot plant for the conversion process </p>
+    // <p> - Tested the quality and performance of the produced biodiesel </p>
+    // <p> - Presented findings at a local conference RACEE.</p>
+    // </p>,
+    content: <p>Describe your experience at school what you learned, what useful skills you have acquired etc.</p>,
   },
   {
     date: 'March 2003',
     location: 'School of Business',
     title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p>Describe your experience at school what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
@@ -287,10 +305,10 @@ export const experience: TimelineItem[] = [
     location: 'Awesome Development Company',
     title: 'Senior UX Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+        <p>
+          Describe work, special projects, notable achievements, what technologies you have been working with, and
+          anything else that would be useful for an employer to know.
+        </p>
     ),
   },
   {
@@ -298,10 +316,10 @@ export const experience: TimelineItem[] = [
     location: 'Garage Startup Studio',
     title: 'Junior bug fixer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+        <p>
+          Describe work, special projects, notable achievements, what technologies you have been working with, and
+          anything else that would be useful for an employer to know.
+        </p>
     ),
   },
 ];
