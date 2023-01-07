@@ -17,7 +17,9 @@ import TwitterIcon from '../components/Icon/TwitterIcon';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // import heroImage from "../images/react-resume-template-2.0.0.jpeg";
-import heroImage from "../images/react-resume-template-2.0.0.jpeg";
+
+import heroImage from "../images/resume_bg8.jpeg";
+// import heroImage from "../images/react-resume-template-2.0.0.jpg";
 // import heroImage from "../images/Untitled.jpeg";
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -116,10 +118,10 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Chennai (Tamilnadu), India', Icon: MapIcon},
     {label: 'Age', text: '28', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Cricket,Movies,Sports', Icon: SparklesIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Cricket, Movies, Sports', Icon: SparklesIcon},
     {label: 'Study', text: 'SSN College of Engineering - Chennai', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Zoho Corporation.', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'Zoho Corporation Private Limited', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -278,25 +280,54 @@ export const education: TimelineItem[] = [
   {
     date: '2012 - 2016',
     location: 'SSN college of Engineering (Chennai)',
-    title: 'B.Tech, Chemical Engineering',
-    // content: <p>CGPA: 8.0 / 10.0
-    //   <p> Coursework:</p>
-    //   <p>  Project management, Process design, Fluid Mechanics, Chemical Process Industries,
-    //     Organic Chemistry, Heat Transfer Operations, Mass Transfer Operations, Chemical Engineering Thermodynamics.
-    //   </p>,
-    // <p> Project : Conversion of Waste Cooking Oil to Biodiesel </p>
-    // <p> - Conducted research on the feasibility of converting waste cooking oil into biodiesel  </p>
-    // <p> - Designed and built a pilot plant for the conversion process </p>
-    // <p> - Tested the quality and performance of the produced biodiesel </p>
-    // <p> - Presented findings at a local conference RACEE.</p>
-    // </p>,
-    content: <p>Describe your experience at school what you learned, what useful skills you have acquired etc.</p>,
+    title: 'B.Tech, Chemical Engineering ',
+    content: <p>
+      <div className = "font-bold  ">
+        CGPA: 8.0 / 10.0
+        <br/>
+        <br/>
+      </div>
+      <div className = "font-bold">
+        Coursework:
+      </div>
+      <div className = "text">
+        Project management, Process design, Fluid Mechanics, Chemical Process Industries,
+        Organic Chemistry, Heat Transfer Operations, Mass Transfer Operations, Chemical Engineering Thermodynamics.
+      </div>
+      <div className = " font-bold">
+        <br />
+      </div>
+      <div className = "font-bold">
+        Project : Conversion of Waste Cooking Oil to Biodiesel
+      </div>
+      <div className = "text">
+        - Conducted research on the feasibility of converting waste cooking oil into biodiesel.<br/>
+        - Designed and built a pilot plant for the conversion process.<br/>
+        - Tested the quality and performance of the produced biodiesel.<br/>
+        - Presented findings at a local conference RACEE.
+      </div>
+    </p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school what you learned, what useful skills you have acquired etc.</p>,
+    date: '2011 - 2012',
+    location: 'Sacred Heart Matriculation Higher Secondary School, Sholinganallur, Chennai',
+    title: '12th Standard / Higher Secondary(HSC)',
+    content: <p>
+      <div className = "font-bold  ">
+        Percentage: 95%
+        <br/>
+        <br/>
+      </div>
+      <div className = "font-bold">
+        Activities:
+      </div>
+      <div className = "text">
+        - Ranked first in School Academic Exam, earned numerous academic awards and recognition.<br/>
+        - Won the Senior State Level Throwball Competition in 2011, held at Karur. <br/>
+        - Runner up in State Level Throwball Competition in 2010, held at Thirunelveli. <br/>
+        - Participated in both cricket and track events at the district levels, demonstrating versatility & athleticism.<br/>
+      </div>
+    </p>,
   },
 ];
 
